@@ -20,7 +20,6 @@ video {
     height: 200px;
     border: none;
     border-radius: 4px;
-
 }
 
 h2 {
@@ -33,6 +32,10 @@ p {
     font-size: 1rem;
     color: #666;
     margin-top: 8px;
+    line-height: 1.4; /* Add line height for better readability */
+    white-space: nowrap; /* Prevent text from breaking into multiple lines */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Show ellipsis for long text */
 }
 
 /* Create a grid layout */
@@ -58,7 +61,6 @@ p {
         padding: 10px;
     }
 }
-
 
 /* Mobile Medium (375px) */
 @media (max-width: 375px) {
@@ -87,7 +89,6 @@ p {
         padding: 10px;
     }
 }
-
 
 /* Tablet (768px) */
 @media (min-width: 426px) and (max-width: 768px) {
